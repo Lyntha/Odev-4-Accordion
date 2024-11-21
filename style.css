@@ -1,0 +1,120 @@
+body {
+  background-color: #212529;
+}
+
+.acc-header {
+  border-bottom: 1px solid white;
+  font-size: 40px;
+  font-weight: 500;
+  overflow: auto;
+  padding: 10px 40px;
+  color: #f8f9fa;
+  background-color: #212529;
+  display: flex;
+  justify-content: center;
+}
+
+.headline {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 8px;
+  color: #f8f9fa;
+}
+
+.accordion-body {
+  display: flex;
+  img {
+    height: 300px;
+  }
+  background: #495057;
+}
+
+.character-name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%; /* Sayfanın genişliğinin %80'i */
+  max-width: 600px; /* Maksimum genişlik */
+  /* margin: 0 auto; /* Yatayda merkezleme */
+  padding: 20px;
+  border-radius: 8px;
+  color: #f8f9fa;
+}
+
+.accordion {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px; /* Varsayılan genişlik */
+  max-width: 600px; /* Maksimum genişlik */
+  min-width: 100%; /* Minimum genişlik */
+  margin: 0 auto; /* Yatayda merkezleme */
+  background: #495057;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-text {
+  margin: 10px;
+  color: #f8f9fa;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #adb5bd;
+  box-shadow: none;
+}
+
+/* #6c757d not collapsed rengi */
+/* #6c757da1 collapsed rengi */
+
+.accordion-button {
+  background-color: #ced4da;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none;
+}
+
+.game-summary {
+  color: #f8f9fa;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 400px;
+  max-width: 400px;
+  margin-right: 40px;
+}
+
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 600px;
+  }
+}
